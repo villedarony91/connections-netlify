@@ -7,12 +7,13 @@ import {
   ScrollRestoration,
 } from "@remix-run/react";
 
-import { Disclosure, DisclosureButton } from '@headlessui/react'
-import { Bars3Icon, PhoneIcon, XMarkIcon } from '@heroicons/react/24/outline'
-import { PlusIcon } from '@heroicons/react/20/solid'
+import { Disclosure } from '@headlessui/react'
+import { PhoneIcon } from '@heroicons/react/24/outline'
 
 import stylesheet from "~/tailwind.css?url";
 import LogoSvg from "./assets/LOGO";
+import Footer from "./components/Footer";
+import Tours from "./components/Tours";
 
 export const links: LinksFunction = () => [
   { rel: "stylesheet", href: stylesheet },
@@ -56,6 +57,9 @@ export default function App() {
         <ScrollRestoration />
         <Scripts />
         <TopBar />
+        <Tours />
+        <Tours />
+        <Footer />
       </body>
     </html>
   );

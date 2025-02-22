@@ -12,6 +12,7 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { PlusIcon } from '@heroicons/react/20/solid'
 
 import stylesheet from "~/tailwind.css?url";
+import LogoSvg from "./assets/LOGO";
 
 export const links: LinksFunction = () => [
   { rel: "stylesheet", href: stylesheet },
@@ -32,13 +33,7 @@ const TopBar = () => {
               <XMarkIcon aria-hidden="true" className="hidden size-6 group-data-[open]:block" />
             </DisclosureButton>
           </div>
-          <div className="flex shrink-0 items-center">
-            <img
-              alt="Your Company"
-              src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=600"
-              className="h-8 w-auto"
-            />
-          </div>
+            <LogoSvg className="fill-secondary-yellow"/>
         </div>
         <div className="flex items-center">
           <div className="shrink-0">
